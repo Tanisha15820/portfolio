@@ -1,0 +1,51 @@
+/* src/index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #fd5f05;     /* ORANGE */
+  --secondary: #f5efe6;   /* WHITISH / BEIGE */
+  --dark: #111111;
+  --muted: #6b6b6b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--secondary);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* optional global container (keep it) */
+.container-custom {
+  width: 100%;
+  max-width: 1350px;
+  margin: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* reusable padding system */
+@layer components {
+  .container-site {
+    @apply px-6 md:px-14;
+  }
+}
