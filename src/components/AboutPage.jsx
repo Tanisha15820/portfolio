@@ -136,7 +136,7 @@ export default function AboutPage() {
    <div>
      <section
       id="about"
-      className="relative overflow-hidden bg-secondary font-montserrat py-16 lg:py-20 px-5 sm:px-6 lg:px-16"
+      className="relative overflow-hidden bg-white font-montserrat py-16 lg:py-20 px-5 sm:px-6 lg:px-16"
     >
       {/* TOP LEFT SHAPE */}
       <div className="absolute top-0 left-0 w-[170px] h-[120px] lg:w-[240px] lg:h-[160px] bg-primary rounded-br-[70px] lg:rounded-br-[120px] opacity-20"></div>

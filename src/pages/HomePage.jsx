@@ -2,8 +2,7 @@
 
 import heroImg from "../assets/hero-banner.png";
 import AboutPage from "../components/AboutPage.jsx";
-import ProjectsPage from "../components/ProjectsPage.jsx";
-import ContactPage from "../components/ContactPage.jsx";
+
 function HomePage() {
   return (
     <div>
@@ -110,8 +109,7 @@ function HomePage() {
       </section>
 
       <AboutPage />
-      {/* <ProjectsPage/>
-      <ContactPage/> */}
+      
     </div>
   );
 }
