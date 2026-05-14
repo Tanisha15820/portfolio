@@ -67,7 +67,7 @@ export default function ProjectsPage() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-secondary py-16 sm:py-20 lg:py-24 px-5 sm:px-6 lg:px-16 font-montserrat"
+      className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24 px-5 sm:px-6 lg:px-16 font-montserrat"
     >
 
       {/* BACKGROUND BLUR */}
