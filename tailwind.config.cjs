@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#fd5f05",   // your orangish brand color
+        primary: "#bc5916",   // your orangish brand color
         secondary: "#f5efe6", // whitish / warm beige tone
       },
 
