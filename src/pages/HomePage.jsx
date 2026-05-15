@@ -97,6 +97,8 @@ function HomePage() {
                   E-commerce strategies, and AI-powered automation.
                 </motion.p>
 
+
+
                 {/* BUTTONS */}
           {/* BUTTONS */}
 <motion.div
@@ -145,7 +147,40 @@ function HomePage() {
                 <p className="text-secondary/80 leading-7 mt-5 text-sm sm:text-base max-w-md">
                   I build modern growth systems combining branding, AI, content strategy, and high-converting e-commerce experiences.
                 </p>
+                                             <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 1 }}
+  className="mt-5 inline-flex items-center gap-2 flex-wrap"
+>
+  <span className="text-sm sm:text-md text-white/70">
+  I can speak:
+</span>
+
+  <div className="flex flex-wrap gap-2">
+    {["English", "Hindi", "French", "German"].map((lang, i) => (
+      <span
+        key={i}
+        className="
+          text-xs sm:text-sm
+          px-3 py-1
+          rounded-full
+          border border-white/20
+          bg-white/5
+          text-white
+          backdrop-blur-md
+          hover:bg-white/10
+          transition
+        "
+      >
+        {lang}
+      </span>
+    ))}
+  </div>
+</motion.div>
               </motion.div>
+
+ 
 
             </div>
           </div>
@@ -153,91 +188,77 @@ function HomePage() {
       </section>
 
 {/* SERVICES SECTION (PREMIUM MARQUEE) */}
+{/* SERVICES SECTION (PREMIUM MARQUEE) */}
 <div className="w-full relative z-30 -mt-10 overflow-hidden">
-  <div className="
-    w-full
-    bg-black
-    border-t border-white/10
-    border-x border-white/10
-    rounded-b-3xl
-    px-6 sm:px-10 md:px-16
-    py-12
-    shadow-[0_20px_60px_rgba(0,0,0,0.7)]
-  ">
-
+  <div
+    className="
+      w-full
+      bg-black
+      border-t border-white/10
+      border-x border-white/10
+      rounded-b-3xl
+      px-6 sm:px-10 md:px-16
+      py-16   /* 👈 HEIGHT INCREASED (was py-10) */
+      shadow-[0_20px_60px_rgba(0,0,0,0.7)]
+    "
+  >
     <div className="overflow-hidden group">
-
-      <div className="flex gap-20 whitespace-nowrap animate-marquee group-hover:[animation-play-state:paused]">
+      <div className="flex items-center whitespace-nowrap animate-marquee w-max group-hover:[animation-play-state:paused]">
 
         {/* SET 1 */}
-        <div className="flex gap-20 min-w-full">
+        <div className="flex items-center gap-16 pr-16 shrink-0">
 
-          <div>
-            <p className="text-white/60 text-sm">#01</p>
-            <h3 className="mt-2 text-xl md:text-2xl font-semibold text-white">
-              Digital Marketing
-            </h3>
-          </div>
-
-          <div>
-            <p className="text-white/60 text-sm">#02</p>
-            <h3 className="mt-2 text-xl md:text-2xl font-semibold text-white">
-              E-commerce Growth
-            </h3>
-          </div>
-
-          <div>
-            <p className="text-white/60 text-sm">#03</p>
-            <h3 className="mt-2 text-xl md:text-2xl font-semibold text-white">
-              AI Automation
-            </h3>
-          </div>
-
-          <div>
-            <p className="text-white/60 text-sm">#04</p>
-            <h3 className="mt-2 text-xl md:text-2xl font-semibold text-white">
-              Branding Strategy
-            </h3>
-          </div>
+          {[
+            "Digital Marketing",
+            "E-commerce Growth",
+            "AI Automation",
+            "Branding Strategy",
+            "Shopify",
+            "Wordpress",
+            "PPC",
+            "SEO",
+            "AEO",
+            "Automation",
+            "Content Creation",
+            "Personal Branding",
+          ].map((item, i) => (
+            <div key={i}>
+              <h3 className="text-xl md:text-2xl font-semibold text-white tracking-wide">
+                {item}
+              </h3>
+            </div>
+          ))}
 
         </div>
 
-        {/* DUPLICATE FOR LOOP */}
-        <div className="flex gap-20 min-w-full">
+        {/* DUPLICATE FOR SMOOTH LOOP */}
+        <div className="flex items-center gap-16 pr-16 shrink-0">
 
-          <div>
-            <p className="text-white/60 text-sm">#01</p>
-            <h3 className="mt-2 text-xl md:text-2xl font-semibold text-white">
-              Digital Marketing
-            </h3>
-          </div>
-
-          <div>
-            <p className="text-white/60 text-sm">#02</p>
-            <h3 className="mt-2 text-xl md:text-2xl font-semibold text-white">
-              E-commerce Growth
-            </h3>
-          </div>
-
-          <div>
-            <p className="text-white/60 text-sm">#03</p>
-            <h3 className="mt-2 text-xl md:text-2xl font-semibold text-white">
-              AI Automation
-            </h3>
-          </div>
-
-          <div>
-            <p className="text-white/60 text-sm">#04</p>
-            <h3 className="mt-2 text-xl md:text-2xl font-semibold text-white">
-              Branding Strategy
-            </h3>
-          </div>
+          {[
+            "Digital Marketing",
+            "E-commerce Growth",
+            "AI Automation",
+            "Branding Strategy",
+            "Shopify",
+            "Wordpress",
+            "PPC",
+            "SEO",
+            "AEO",
+            "Automation",
+            "Content Creation",
+            "Personal Branding",
+          ].map((item, i) => (
+            <div key={i}>
+              <h3 className="text-xl md:text-2xl font-semibold text-white tracking-wide">
+                {item}
+              </h3>
+            </div>
+          ))}
 
         </div>
 
       </div>
     </div>
-
   </div>
 </div>
       {/* OTHER SECTIONS */}
