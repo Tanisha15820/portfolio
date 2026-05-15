@@ -5,7 +5,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import SouthEastIcon from "@mui/icons-material/SouthEast";
-import aboutImg from "../assets/aboutt.png";
+import aboutImg from "../assets/about-section.jpeg";
 // import SkillsPage from "./SkillsPage";
 
 export default function AboutPage() {
