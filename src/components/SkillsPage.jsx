@@ -148,28 +148,28 @@ export default function SkillsPage() {
   const [mouseX, setMouseX] = useState(0);
 
   const skills = [
-    "REACT",
-    "NEXT.JS",
-    "JAVASCRIPT",
-    "TAILWIND CSS",
-    "MONGODB",
-    "MYSQL",
-    "REST API",
-    "REDUX",
-    "SPRING BOOT",
-    "TYPESCRIPT",
-    "JAVA",
-    "GIT",
-    "HTML5",
-    "CSS3",
-    "MUI",
-    "SHADCN",
-    "GITHUB",
-    "NODE.JS",
-    "EXPRESS",
-    "FIGMA",
-    "FIREBASE",
-    "POSTMAN",
+    "SEO",
+    "BRANDING",
+    "SHOPIFY",
+    "METAADS",
+    "GOOGLEADS",
+    "REELS",
+    "CONTENT",
+    "ANALYTICS",
+    "COPYWRITING",
+    "CHATBOTS",
+    "AUTOMATION",
+    "EMAILING",
+    "TARGETING",
+    "FUNNELS",
+    "ECOMMERCE",
+    "LEADS",
+    "STRATEGY",
+    "CAMPAIGNS",
+    "GROWTH",
+    "AI",
+    "ENGAGEMENT",
+    "MARKETING",
   ];
 
   useEffect(() => {
@@ -189,48 +189,52 @@ export default function SkillsPage() {
   }, []);
 
   const positions = [
-    { left: "6%", top: "10%", rotate: "-80deg" },
-    { left: "18%", top: "6%", rotate: "-10deg" },
-    { left: "36%", top: "3%", rotate: "-6deg" },
-    { left: "56%", top: "5%", rotate: "8deg" },
-    { left: "78%", top: "8%", rotate: "14deg" },
+    /* TOP ROW */
+    { left: "10%", top: "10%", rotate: "-80deg" },
+    { left: "22%", top: "8%", rotate: "-10deg" },
+    { left: "38%", top: "6%", rotate: "-6deg" },
+    { left: "58%", top: "8%", rotate: "8deg" },
+    { left: "76%", top: "10%", rotate: "14deg" },
 
-    { left: "22%", top: "26%", rotate: "0deg" },
-    { left: "46%", top: "22%", rotate: "-4deg" },
-    { left: "64%", top: "30%", rotate: "16deg" },
-    { left: "80%", top: "26%", rotate: "4deg" },
+    /* UPPER MIDDLE */
+    { left: "24%", top: "20%", rotate: "0deg" },
+    { left: "46%", top: "16%", rotate: "-4deg" },
+    { left: "64%", top: "22%", rotate: "16deg" },
+    { left: "78%", top: "20%", rotate: "4deg" },
 
-    { left: "4%", top: "48%", rotate: "-10deg" },
-    { left: "16%", top: "78%", rotate: "8deg" },
-    { left: "32%", top: "78%", rotate: "0deg" },
-    { left: "50%", top: "78%", rotate: "4deg" },
-    { left: "66%", top: "78%", rotate: "2deg" },
-    { left: "82%", top: "78%", rotate: "0deg" },
-    { left: "94%", top: "56%", rotate: "12deg" },
+    /* SIDE ELEMENTS */
+    { left: "10%", top: "50%", rotate: "-10deg" },
+    { left: "90%", top: "54%", rotate: "12deg" },
 
-    { left: "10%", top: "62%", rotate: "-5deg" },
-    { left: "28%", top: "58%", rotate: "6deg" },
-    { left: "44%", top: "60%", rotate: "-3deg" },
-    { left: "60%", top: "58%", rotate: "8deg" },
-    { left: "76%", top: "58%", rotate: "-4deg" },
-    { left: "90%", top: "66%", rotate: "10deg" },
+    /* LOWER MIDDLE */
+    { left: "14%", top: "64%", rotate: "-5deg" },
+    { left: "30%", top: "62%", rotate: "6deg" },
+    { left: "46%", top: "64%", rotate: "-3deg" },
+    { left: "62%", top: "62%", rotate: "8deg" },
+    { left: "76%", top: "62%", rotate: "-4deg" },
+    { left: "88%", top: "66%", rotate: "10deg" },
+
+    /* BOTTOM ROW */
+    { left: "18%", top: "76%", rotate: "8deg" },
+    { left: "34%", top: "76%", rotate: "0deg" },
+    { left: "50%", top: "76%", rotate: "4deg" },
+    { left: "66%", top: "76%", rotate: "2deg" },
+    { left: "80%", top: "76%", rotate: "0deg" },
   ];
 
   return (
     <section
       id="skills"
       ref={sectionRef}
-      className="relative overflow-hidden bg-white  px-5 sm:px-8 lg:px-16 font-montserrat"
+      className="relative w-full overflow-hidden bg-white px-0 font-montserrat"
     >
-      <div className="max-w-7xl mx-auto relative z-10">
-        {/* HEADER */}
-     
+      <div className="relative z-10 w-full">
 
         {/* MAIN BOX */}
-        <div className="mt-16 lg:mt-20 relative bg-[#fdf7f2] border border-[#efdfd0] rounded-[40px] min-h-[700px] overflow-hidden px-6 py-10 lg:px-12 lg:py-14 shadow-[0_10px_60px_rgba(0,0,0,0.05)]">
+        <div className="relative bg-white border border-[#efdfd0] rounded-none min-h-[460px] sm:min-h-[540px] lg:min-h-[580px] overflow-hidden pt-24 sm:pt-28 lg:pt-32 pb-14 sm:pb-16 lg:pb-20 px-4 sm:px-12 lg:px-16 shadow-[0_10px_60px_rgba(0,0,0,0.05)]">
 
           {/* GLOW */}
-          <div className="absolute top-1/2 left-1/2 w-[350px] h-[350px] bg-primary/10 blur-[120px] rounded-full -translate-x-1/2 -translate-y-1/2" />
+          <div className="absolute top-1/2 left-1/2 w-[220px] h-[220px] sm:w-[350px] sm:h-[350px] bg-primary/10 blur-[120px] rounded-full -translate-x-1/2 -translate-y-1/2" />
 
           {/* LINES */}
           <div className="absolute inset-0 opacity-[0.06]">
@@ -243,15 +247,15 @@ export default function SkillsPage() {
             ))}
           </div>
 
-          {/* BIG SKILLS TEXT (FIXED SINGLE LAYER) */}
+          {/* BIG SKILLS TEXT */}
           <div
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30"
+            className="absolute left-1/2 top-[45%] sm:top-[42%] -translate-x-1/2 -translate-y-1/2 z-30"
             onMouseMove={(e) => {
               const rect = e.currentTarget.getBoundingClientRect();
               setMouseX(e.clientX - rect.left);
             }}
           >
-            <h1 className="flex whitespace-nowrap text-[70px] sm:text-[120px] lg:text-[190px] font-light tracking-[10px] sm:tracking-[22px] uppercase select-none">
+            <h1 className="flex whitespace-nowrap text-[42px] sm:text-[120px] lg:text-[190px] font-light tracking-[4px] sm:tracking-[22px] uppercase select-none font-montserrat">
               {"SKILLS".split("").map((letter, index) => {
                 const distance = Math.abs(mouseX - index * 120);
 
@@ -294,7 +298,7 @@ export default function SkillsPage() {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="absolute z-20 px-7 py-4 rounded-full bg-primary text-white border border-[#ead9ca] font-bold tracking-[3px] text-[13px] sm:text-[15px] shadow-[0_8px_25px_rgba(0,0,0,0.05)] transition-all duration-[1800ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-white hover:text-black hover:scale-105"
+              className="absolute z-20 px-4 sm:px-7 py-2.5 sm:py-4 rounded-full bg-primary text-white border border-[#ead9ca] font-bold tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[15px] shadow-[0_8px_25px_rgba(0,0,0,0.05)] transition-all duration-[1800ms] ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-white hover:text-black hover:scale-105"
               style={{
                 left: drop ? positions[index]?.left : "50%",
                 top: drop ? positions[index]?.top : "-120px",
@@ -302,13 +306,14 @@ export default function SkillsPage() {
                   ? `translateX(-50%) rotate(${positions[index]?.rotate})`
                   : "translateX(-50%) rotate(0deg)",
                 transitionDelay: `${index * 90}ms`,
+                maxWidth:
+                  typeof window !== "undefined" && window.innerWidth < 640
+                    ? "110px"
+                    : "unset",
+                textAlign: "center",
               }}
             >
               {skill}
-
-              {drop && (
-                <div className="absolute left-1/2 -top-[140px] -translate-x-1/2 w-[1px] h-[140px] bg-[#e2c2a3]/30" />
-              )}
             </div>
           ))}
         </div>
